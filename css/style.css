@@ -9,6 +9,7 @@
   --basic-white: #ffffff;
   --basic-light: #F3F7F9;
   --basic-greylight: #C5C5C5;
+  --additiona-lgreylight: #F1F5F7;
   --basic-greydark: #A9A9A9;
   --basic-darkblue: #32425C;
   --basic-darkblue-dark: #293449;
@@ -30,8 +31,6 @@
   /* popular items */
   --popular-head: #F9F5F0;
   --popular-card-border: #EAEAEA;
-  /* service */
-  --service-background: #F1F5F7;
   /* footer */
   --footer-link: #FFD180;
   --social-icons-background: #212A3A;
@@ -294,7 +293,7 @@
 /* Services */
 
 .services {
-  background-color: var(--service-background);
+  background-color: var(--additional-greylight);
 }
 
 .services-item {
@@ -334,7 +333,7 @@
 }
 
 .footer-site-navigation a {
-  color: var(--service-background);
+  color: var(--additional-greylight);
 }
 
 .footer-navigation a:hover {
