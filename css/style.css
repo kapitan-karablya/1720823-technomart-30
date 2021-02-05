@@ -1,0 +1,343 @@
+/* Variables */
+
+:root {
+  --basic-black-rgb: 0, 0, 0;
+  --basic-white-rgb: 255, 255, 255;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-light: #F3F7F9;
+  --basic-greylight: #C5C5C5;
+  --basic-red: #EE3643;
+
+  /* navigation */
+  --navigation-basic: #32425C;
+  --navigation-dark: #293449;
+  --main-navigation-extra-dark: #161D29;
+  --navigation-extra-dark: #1D2739;
+
+  /* place order button */
+  --place-order-button: #63A63E;
+  --hover-place-order-button: #5FBB2D;
+  --focus-place-order-button: #6db254;
+
+  /* promo-block */
+  --promo-materials: #FFBF47;
+  --promo-tools: #3BBCE3;
+  --promo-technics: #DC91D8;
+  --promo-discounts: #8ED78F;
+  --promo-delivery: #FFC047;
+
+  /* popular items */
+  --popular-head: #F9F5F0;
+  --popular-old-price: #A9A9A9;
+  --popular-card-border: #EAEAEA;
+
+  /* service */
+  --service-background: #F1F5F7; /*???*/
+
+  /* footer */
+  --footer-link: #FFD180;
+  --icons-background: #212A3A;
+
+  /* modal */
+  --form-insert-border: #C5C5C5;
+  --form-text-light: #A9A9A9;
+  --submit-background: #F4F4F4;
+}
+
+
+/* Body */
+
+.page-body {
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+/* Sections */
+
+.section-title{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.section-text{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+/* ??? */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contacts */
+
+.contacts-phone{
+  text-decoration: none;
+}
+
+/* Header */
+.main-header {
+  background-color: var(--basic-light);
+  background-image: url("../img/header-background.png");
+}
+
+.main-navigation {
+  background-color: var(--navigation-dark);
+  color: var(--basic-white);
+}
+
+.logo {
+  background-color: var(--basic-red);
+}
+
+.main-navigation a,
+.main-navigation a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.bookmarks:focus,
+.shopping-cart:focus{
+  background-color: var(--main-navigation-extra-dark);
+}
+
+.place-order {
+  background-color: var(--place-order-button);
+}
+.place-order:hover {
+  background-color: var(--hover-place-order-button);
+}
+.place-order:focus {
+  background-color: var(--focus-place-order-button);
+  background-image: url("../img/focus-place-order-background.png");
+}
+
+.store-description {
+  color: var(--basic-red);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-contacts{
+  color: var(--navigation-basic);
+  font-size: 14px;
+}
+
+.header-contacts-phone {
+  color: var(--basic-red);
+  background-color: var(--basic-light);
+  border: 3px solid #FFFFFF;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.account-link {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.account-link-login {
+  background-image: url("../img/login-background.png");
+}
+
+.account-link-registration {
+  background-image: url("../img/registration-background.png");
+}
+
+.secondary-navigation{
+  background-color: var(--navigation-basic);
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+/* Promo block */
+
+.promo-list{
+  list-style: none;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+}
+
+.promo-item a {
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: rgba(var(--basic-white-rgb), 0.3);
+}
+
+.promo-item {
+  background-image: url("../img/backgrounds/promo-block-items.png");
+}
+
+.promo-item-materials{
+  background-color: var(--promo-materials)
+}
+
+.promo-item-tools{
+  background-color: var(--promo-tools)
+}
+
+.promo-item-technics{
+  background-color: var(--promo-technics)
+}
+
+.promo-item-discounts{
+  background-color: var(--promo-discounts)
+}
+
+.promo-item-delivery{
+  background-color: var(--promo-delivery)
+}
+
+.slider-item{
+  background-color: rgba(var(--basic-black-rgb), 0.25);
+}
+
+/* Popular blocks */
+
+.popular-header {
+  background-color: var(--popular-head);
+}
+
+.popular-title{
+  color: var(--navigation-basic);
+}
+
+.popular-list{
+  list-style: none;
+}
+
+.popular a{
+  text-decoration: none;
+}
+
+.popular-item {
+  border: 1px solid var(--popular-card-border);
+}
+
+.popular-products-item
+{
+  background-image: url("../img/backgrounds/perforator-card.png");
+}
+
+.popular-products-item a{
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.popular-products-item del{
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--popular-old-price);
+}
+
+.button-buy-item{
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.popular-manufacturers-item
+{
+  background-image: url("../img/backgrounds/manufacturer-card.png");
+}
+
+/* Services */
+
+.services{
+  background-color: var(--service-background);
+}
+
+.services-list{
+  list-style: none;
+}
+
+.services-item{
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.services-title{
+  color: var(--navigation-basic);
+}
+
+.services-menu-item{
+  background-color: var(--navigation-basic);
+}
+
+/* About company */
+
+.partner-companies-list{
+  color: var(--basic-black);
+  list-style-image: url("../img/partners-list-marker.png")
+}
+
+/* Footer */
+
+.main-footer{
+  background-color: var(--navigation-basic);
+}
+
+.footer-navigation a{
+  text-decoration: none;
+  color: var(--service-background);
+}
+
+.footer-navigation ul{
+  list-style: none;
+}
+
+.footer-contact{
+  color: var(--basic-light);
+}
+
+.footer-link{
+  color: var(--footer-link);
+  text-decoration: none;
+}
+
+.secondary-footer{
+  background-color: var(--navigation-dark);
+}
+
+}
