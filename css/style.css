@@ -99,7 +99,7 @@
   list-style: none;
 }
 
-.not-underlined-link, .not-underlined-links a {
+.not-underlined-link {
   text-decoration: none;
   color: var(--basic-white);
 }
@@ -179,11 +179,11 @@
   background-color: var(--basic-darkblue);
 }
 
-.site-navigation a:hover {
+.site-navigation-link:hover {
   background-color: var(--basic-darkblue-dark);
 }
 
-.site-navigation a:focus {
+.site-navigation-link:focus {
   background-color: var(--site-navigation-focus);
 }
 
@@ -191,22 +191,22 @@
 
 /* Promo block */
 
-.promo-item h3 {
+.promo-item-title {
   font-size: 24px;
   line-height: 30px;
 }
 
-.promo-item a {
+.promo-item-link {
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(var(--basic-white-rgb), 0.3);
 }
 
-.promo-item a:hover {
+.promo-item-link:hover {
   background-color: rgba(var(--basic-greylight-rgb), 0.3);
 }
 
-.promo-item a:focus {
+.promo-item-link:focus {
   background-color: rgba(var(--basic-greydark-rgb), 0.3);
 }
 
@@ -246,15 +246,13 @@
 
 .popular-item {
   border: 1px solid var(--popular-card-border);
-  
-  
 }
 
 .popular-item:hover {
   box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
 }
 
-.popular-products-item a {
+.popular-products-item-link {
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 20px;
   font-weight: 700;
@@ -312,15 +310,15 @@
   background-color: var(--basic-darkblue);
 }
 
-.footer-site-navigation a {
+.footer-site-navigation-link {
   color: var(--additional-greylight);
 }
 
-.footer-navigation a:hover {
+.footer-site-navigation-link:hover {
   text-decoration: underline;
 }
 
-.footer-navigation a:focus{
+.footer-site-navigation-link:focus {
   opacity: 0.5;
 }
 
@@ -336,21 +334,22 @@
   background-color: var(--basic-darkblue-dark);
 }
 
-.footer-external-link:hover{
+.footer-external-link:hover {
   text-decoration: underline;
 }
-.footer-external-link:focus{
+
+.footer-external-link:focus {
   color: var(--basic-red);
 }
 
 /* social networks */
 
-.social-button img {
+.social-network-icon {
   background-color: var(--social-icons-background);
   border-radius: 50%;
 }
 
-.social-button img:hover, .social-button img:focus {
+.social-network-icon:hover, .social-network-icon:focus {
   background-color: var(--basic-red);
 }
 
@@ -370,7 +369,7 @@
   background-color: var(--submit-background);
 }
 
-.write-message-form input[type="text"], .write-message-form input[type="email"], .write-message-form textarea {
+.form-input-item {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
