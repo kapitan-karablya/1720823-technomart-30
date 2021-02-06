@@ -108,7 +108,6 @@
 
 .main-header {
   background-color: var(--basic-light);
-  background-image: url("../img/header-background.png");
 }
 
 .main-navigation {
@@ -137,7 +136,6 @@
 
 .place-order:focus {
   background-color: var(--focus-place-order-button);
-  background-image: url("../img/focus-place-order-background.png");
 }
 
 .store-description {
@@ -177,14 +175,6 @@
   color: var(--basic-greylight);
 }
 
-.account-link-login {
-  background-image: url("../img/login-background.png");
-}
-
-.account-link-registration {
-  background-image: url("../img/registration-background.png");
-}
-
 .site-navigation {
   background-color: var(--basic-darkblue);
 }
@@ -200,10 +190,6 @@
 /* Main */
 
 /* Promo block */
-
-.promo-item {
-  background-image: url("../img/backgrounds/promo-block-items.png");
-}
 
 .promo-item h3 {
   font-size: 24px;
@@ -260,14 +246,12 @@
 
 .popular-item {
   border: 1px solid var(--popular-card-border);
+  
+  
 }
 
 .popular-item:hover {
-  filter: drop-shadow(0px 4px 20px rgba(var(--basic-black-rgb), 0.15));
-}
-
-.popular-products-item {
-  background-image: url("../img/backgrounds/perforator-card.png");
+  box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), 0.15);
 }
 
 .popular-products-item a {
@@ -284,10 +268,6 @@
 
 .item-old-price {
   color: var(--basic-greydark);
-}
-
-.popular-manufacturers-item {
-  background-image: url("../img/backgrounds/manufacturer-card.png");
 }
 
 /* Services */
@@ -379,13 +359,11 @@
 .modal {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-image: url("../img/backgrounds/modal.png");
   filter: drop-shadow(0px 4px 20px rgba(var(--basic-black-rgb), 0.15));
 }
 
 .modal-head-line {
   background-color: var(--basic-red);
-  background-image: url("../img/backgrounds/modal-head-line.png");
 }
 
 .submit-field {
