@@ -643,6 +643,8 @@
 }
 
 .secondary-footer-wrapper {
+  width: 940px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
   grid-gap: 20px;
