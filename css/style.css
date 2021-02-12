@@ -131,8 +131,6 @@
   display: grid;
   background-color: var(--basic-light);
   margin-bottom: 59px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .main-header-bar {
