@@ -851,10 +851,22 @@
 
 /* Filter */
 
+.filter-form{
+  display: flex;
+  flex-direction: column;
+}
+
 .filter-option-title {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.filter-fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
 }
 
 .price-input {
@@ -874,6 +886,13 @@
   line-height: 18px;
   background-color: var(--basic-white);
   border: 1px solid var(--show-button);
+}
+
+/* Sorting */
+
+.sorting{
+display: flex;
+justify-content: space-between;
 }
 
 .sort-radio {
@@ -931,6 +950,15 @@
 
 .about-perforators-text {
   margin-block: 25px 68px;
+}
+
+/* Pagination list */
+
+.pagination-list {
+  display: flex;
+  width: 284px;
+  height: 38px;
+  justify-content: space-between;  
 }
 
 /* Modal add item */
