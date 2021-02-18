@@ -153,6 +153,30 @@
   color: var(--basic-white);
 }
 
+.new-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.new-item::before {
+  content: "new";
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: -27px;
+  background-color: var(--basic-red);
+  transform: rotate(45deg);
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
 /* Header */
 
 .main-header {
