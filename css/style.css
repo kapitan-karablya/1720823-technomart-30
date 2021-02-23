@@ -1173,6 +1173,7 @@
 }
 
 .services-item-credit {
+  display: none;
   margin-top: 67px;
   padding-top: 0.5px;
   width: 620px;
@@ -1192,6 +1193,11 @@
   top: 0;
   background-image: url("../img/credit.png");
 }
+
+.current-service {
+  display: block;
+}
+
 
 /* About company */
 
