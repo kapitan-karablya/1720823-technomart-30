@@ -22,46 +22,110 @@
   
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="not-underlined-link logo header-logo" href="index.html">
-          <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
-        </a>
-        <form class="search" action="#" method="POST">
-          <!--<img class="navigation-icon" src="img/navigation-icons/search.svg" width="44" height="44">-->
-          <input type="search" placeholder="Поиск:">
-        </form>
-        <a class="not-underlined-link bookmarks" href="blank.html">
-          <!--<img class="navigation-icon" src="img/navigation-icons/bookmarks.svg" width="44" height="44">-->
-          Закладки:
-        </a>
-        <a class="not-underlined-link shopping-cart" href="blank.html">
-          <!--<img class="navigation-icon" src="img/navigation-icons/shopping-cart.svg" width="44" height="44">-->
-          Корзина:
-        </a>
-        <a class="not-underlined-link place-order" href="blank.html">Оформить заказ</a>
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
+            <a class="not-underlined-link logo header-logo" href="index.html">
+              <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
+            </a>
+            <form class="search" action="#" method="POST">
+              <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                  fill="white" />
+              </svg>
+              <input class="search-input" type="search" placeholder="Поиск:">
+            </form>
+            <a class="not-underlined-link main-navigation-link bookmarks" href="blank.html">Закладки:</a>
+            <a class="not-underlined-link main-navigation-link shopping-cart" href="blank.html">Корзина:</a>
+            <a class="not-underlined-link main-navigation-link place-order" href="blank.html">Оформить заказ</a>
+          </div>
+        </div>
+        </div>
       </nav>
-      <p class="store-description">
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта
-      </p>
-      <p class="header-contacts">
-        <a class="not-underlined-link header-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a><br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
-      <a class="not-underlined-link account-link account-link-login" href="blank.html">Войти</a>
-      <a class="not-underlined-link account-link account-link-registration" href="blank.html">Регистрация</a>
-  
-      <nav class="site-navigation">
-        <ul class="not-underlined-links unmarked-list">
-          <li><a class="not-underlined-link site-navigation-link" href="index.html">Главная</a></li>
-          <li><a class="not-underlined-link site-navigation-link" href="blank.html">Компания</a></li>
-          <li><a class="not-underlined-link site-navigation-link" href="catalog.html">Каталог</a></li>
-          <li><a class="not-underlined-link site-navigation-link" href="blank.html">Новости</a></li>
-          <li><a class="not-underlined-link site-navigation-link" href="blank.html">Спецпредложения</a></li>
-          <li><a class="not-underlined-link site-navigation-link" href="blank.html">Доставка</a></li>
-          <li><a class="not-underlined-link site-navigation-link" href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="secondary-header">
+        <p class="store-description">
+          Интернет-магазин<br>
+          строительных материалов<br>
+          и инструментов для ремонта
+        </p>
+        <div class="header-contacts">
+          <div class="header-contacts-phone">
+            <a class="not-underlined-link header-contacts-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a><br>
+          </div>
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="personal-account unauthorized-user">
+          <div class="authorized-user-wrapper">
+            <div class="account-login-links">
+              <a class="not-underlined-link account-link account-link-login" href="blank.html">
+                <svg class="login-icon" width="21" height="17" viewBox="0 0 21 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
+                  <path
+                    d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"
+                    fill="#C5C5C5" />
+                </svg>
+                <p class="account-link-text">Войти</p>
+              </a>
+              <a class="not-underlined-link account-link account-link-registration" href="blank.html">
+                <p class="account-link-text">Регистрация</p>
+              </a>
+            </div>
+          </div>
+          <div class="unauthorized-user-wrapper">
+            <div class="account-user-links">
+              <div class="current-user">
+                <a class="not-underlined-link current-user-link" href="blank.html">
+                  <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
+                      fill="#C5C5C5" />
+                  </svg>
+                  <span>Равшан Джамшутович</span>
+                </a>
+                <button class="logout-button" alt="Выйти">
+                  <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
+                    <path
+                      d="M2.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.087 3.027v10.946C.112 15.189.938 17 3.116 17h5.027v-1.99H3.116c-.839 0-.992-.683-1.01-1.058z"
+                      fill="#C5C5C5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="personal-account-links">
+                <a class="not-underlined-link personal-account-link" href="blank.html">Мои заказы</a>
+                <a class="not-underlined-link personal-account-link" href="blank.html">Личный кабинет</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="site-navigation">
+          <ul class="not-underlined-links unmarked-list site-navigation-list">
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="blank.html">Компания</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="blank.html">Новости</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="blank.html">Спецпредложения</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="blank.html">Доставка</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="not-underlined-link site-navigation-link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
   <main>
@@ -69,85 +133,133 @@
   </main>
 
   <footer class="main-footer">
-    <a class="not-underlined-link logo footer-logo"  href="index.html">
-      <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
-    </a>
+    <div class="main-footer-wrapper">
+      <div class="main-footer-level main-footer-first-level">
+        <div class="footer-logo">
+          <a class="not-underlined-link logo footer-logo-link" href="index.html">
+            <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
+          </a>
+        </div>
 
-    <section class="footer-navigation">
-      <h2>Навигация по сайту</h2>
-      <nav class="footer-site-navigation">
-        <ul class="unmarked-list">
-          <li><a class="not-underlined-link footer-site-navigation-link" href="blank.html">Компания</a></li>
-          <li><a class="not-underlined-link footer-site-navigation-link" href="blank.html">Новости</a></li>
-          <li><a class="not-underlined-link footer-site-navigation-link" href="catalog.html">Каталог</a></li>
-          <li><a class="not-underlined-link footer-site-navigation-link" href="blank.html">Доставка</a></li>
-          <li><a class="not-underlined-link footer-site-navigation-link" href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </section>
+        <section class="footer-navigation footer-site-navigation-section">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
+          <nav class="footer-site-navigation">
+            <ul class="unmarked-list footer-site-navigation-list">
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Компания</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Новости</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-site-navigation-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Доставка</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
 
-    <section>
-      <h2>Связь с нами</h2>
-      <p class="footer-contact">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a class="not-underlined-link footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </p>
-    </section>
+      <div class="main-footer-level main-footer-second-level">
+        <section class="footer-company-contacts">
+          <h2 class="visually-hidden">Связь с нами</h2>
+          <p class="footer-paragraph footer-contact">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <a class="not-underlined-link footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
+        </section>
 
-    <section class="footer-navigation">
-      <h2>Основные разделы каталога</h2>
-      <nav class="footer-catalog-navigation">
-        <ul class="unmarked-list">
-          <li><a class="not-underlined-link footer-link catalog-navigation" href="blank.html">Материалы</a></li>
-          <li><a class="not-underlined-link footer-link" href="blank.html">Техника</a></li>
-          <li><a class="not-underlined-link footer-link" href="blank.html">Инструмент</a></li>
-          <li><a class="not-underlined-link footer-link" href="blank.html">Спецпредложения</a></li>
-        </ul>
-      </nav>
-    </section>
+        <section class="footer-navigation footer-catalog-navigation-section">
+          <h2 class="visually-hidden">Основные разделы каталога</h2>
+          <nav class="footer-catalog-navigation">
+            <ul class="unmarked-list footer-catalog-navigation-list">
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                  href="blank.html">Материалы</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-link footer-catalog-navigation-link" href="blank.html">Техника</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                  href="blank.html">Инструмент</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                  href="blank.html">Спецпредложения</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </div>
 
     <div class="secondary-footer">
+      <div class="secondary-footer-wrapper">
+        <p class="footer-paragraph footer-copyright">
+          © 2010–2019 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
 
-      <p class="footer-copyright">
-        © 2010–2019 Компания «Техномарт»<br>
-        Все права защищены
-      </p>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="unmarked-list social-network-list">
+            <li>
+              <a class="not-underlined-link social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
+                    fill="#212A3A" />
+                  <path
+                    d="M24.54 25.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.748-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.004-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.764-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.241-.173-.578-.229-.578-.229l-3.576.023s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.215-.225.206-.648.206-.648s-.03-1.977.9-2.268z"
+                    fill="#fff" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="not-underlined-link social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
+                    fill="#212A3A" />
+                  <path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4h4z" fill="#fff" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="not-underlined-link social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
+                    fill="#212A3A" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 11h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H14c-1.65 0-3-1.35-3-3V14c0-1.65 1.35-3 3-3zm11 10.5c0-1.93-1.57-3.5-3.5-3.5S18 19.57 18 21.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5zM14 29v-9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H29v9H14zm11-11h4v-4h-4v4z"
+                    fill="#fff" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="footer-social">
-        <h2>Мы в соцсетях</h2>
-        <ul class="unmarked-list">
-          <li>
-            <a class="not-underlined-link social-button" href="#">
-              <span>Вконтакте</span>
-              <img class="social-network-icon" src="img/social-networks-icons/vkontakte.svg" width="44" height="44">
-            </a>
-            </a>
-          </li>
-          <li>
-            <a class="not-underlined-link social-button" href="#">
-              <span>Фейсбук</span>
-              <img class="social-network-icon" src="img/social-networks-icons/facebook.svg" width="44" height="44">
-            </a>
-          </li>
-          <li>
-            <a class="not-underlined-link social-button" href="#">
-              <span>Инстаграм</span>
-              <img class="social-network-icon" src="img/social-networks-icons/instagram.svg" width="44" height="44">
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <p class="footer-feedback">
-        Обратная связь:
-        <a class="not-underlined-link footer-link footer-external-link"
-          href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <p class="footer-copyright">
-        Разработано —
-        <a class="not-underlined-link footer-link footer-external-link"
-          href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+        <p class="footer-paragraph footer-external footer-feedback">
+          Обратная связь:
+          <a class="not-underlined-link footer-link external-link"
+            href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="footer-paragraph footer-external footer-developed-by">
+          Разработано —
+          <a class="not-underlined-link footer-link external-link"
+            href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+      </div>
     </div>
   </footer>
 
