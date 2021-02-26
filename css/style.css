@@ -97,7 +97,7 @@
 
 .section-title {
   font-size: 30px;
-  line-height: 31px;
+  line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
   font-weight: 400;
@@ -293,7 +293,7 @@
   align-items: center;
   width: 150px;
   position: relative;
-  padding: 9px 12px;
+  padding: 10px 12px 8px;
   box-sizing: border-box;
 }
 
@@ -309,6 +309,7 @@
   content: "";
   flex-shrink: 0;
   position: relative;
+  top: -1px;
   width: 14px;
   height: 16px;
   margin-right: 9px;
@@ -322,10 +323,15 @@
   margin-left: 14px;
 }
 
+.filled-cart {
+  background-color: var(--basic-red);
+}
+
 .shopping-cart::before {
   content: "";
   flex-shrink: 0;
   position: relative;
+  top: -2px;
   width: 15px;
   height: 15px;
   margin-right: 8px;
@@ -591,7 +597,7 @@
 
 .site-navigation-link {
   display: block;
-  padding: 16px 28px 15px;
+  padding: 17px 28px 14px;
 }
 
 /* .site-navigation-item:first-of-type .site-navigation-link{
@@ -857,7 +863,7 @@
 .popular-title {
   color: var(--basic-darkblue);
   font-weight: 400;
-  margin: 29px 0 30px 28px;
+  margin: 30px 0 29px 28px;
   display: block;
 }
 
@@ -1483,11 +1489,26 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 16px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/catalog-icons/icon-right-small.svg");
 }
 
 .breadcrumbs-link {
@@ -1498,16 +1519,7 @@
   line-height: 18px;
   color: var(--basic-black);
   margin-right: 41px;
-}
-
-.breadcrumbs-link::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  margin-left: 17px;
-  width: 8px;
-  height: 12px;
-  background-image: url("../img/catalog-icons/icon-right-small.svg");
+  box-sizing: border-box;
 }
 
 .breadcrumbs-item:last-child .breadcrumbs-link {
@@ -1518,7 +1530,12 @@
   display: none;
 }
 
-/* 
+.breadcrumbs-home-image{
+  position: relative;
+  top: 2px;
+}
+
+/*
 
 .breadcrumbs-link-home::after {
   margin-left: 15px;
@@ -1562,6 +1579,10 @@
   line-height: 19px;
 }
 
+.manufacturers-list {
+  margin-bottom: 1px;
+}
+
 .filter-fieldset {
   padding: 0;
   margin: 15px 0 25px;
@@ -1579,7 +1600,7 @@
 
 .filter-item {
   padding-left: 35px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -1592,11 +1613,11 @@
 }
 
 .price-fieldset {
-  margin-bottom: 25px;
+  margin-top: 13px;
 }
 
 .price-title {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .range-controls {
@@ -1667,12 +1688,11 @@
 }
 
 .manufacturers-fieldset {
-  margin-top: 17px;
-  margin-bottom: 26px;
+  margin-top: 16px;
 }
 
 .manufacturers-title {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .manufacturers-fieldset::after {
@@ -1684,15 +1704,15 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-top: 3px;
-  padding-bottom: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .checkbox-icon {
   content: "";
   position: absolute;
   box-sizing: border-box;
-  left: -37px;
+  left: -35px;
   top: 0;
   width: 23px;
   height: 23px;
@@ -1722,7 +1742,7 @@
 }
 
 .power-title {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .radio-label {
@@ -1730,7 +1750,7 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  padding: 3px 0;
+  padding: 2px 0 3px;
 }
 
 .radio-label::before {
@@ -1759,6 +1779,10 @@
 
 .filter-checkbox-item:hover path {
   fill: var(--filter-item-hover);
+}
+
+.filter-radio-item {
+  margin-bottom: 17px;
 }
 
 .filter-radio-item:hover .radio-label::before {
@@ -1923,11 +1947,11 @@
 }
 
 .about-perforators-title {
-  margin: 64px 0 23px;
+  margin: 64px 0 24px;
 }
 
 .about-perforators-text {
-  margin-block: 23px 69px;
+  margin: 24px 0 68px;
 }
 
 /* Modal */
