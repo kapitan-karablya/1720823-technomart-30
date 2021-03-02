@@ -10,7 +10,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
@@ -56,10 +56,10 @@
         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
 
-      <div class="personal-account authorized-user">
+      <div class="personal-account unauthorized-user">
         <div class="authorized-user-wrapper">
           <div class="account-login-links">
-            <a class="not-underlined-link account-link account-link-login" href="blank.html">
+            <a class="not-underlined-link authorization-svg-link account-link account-link-login" href="blank.html">
               <svg class="login-icon" width="21" height="17" viewBox="0 0 21 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
@@ -77,7 +77,7 @@
         <div class="unauthorized-user-wrapper">
           <div class="account-user-links">
             <div class="current-user">
-              <a class="not-underlined-link current-user-link" href="blank.html">
+              <a class="not-underlined-link authorization-svg-link current-user-link" href="blank.html">
                 <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
@@ -85,7 +85,7 @@
                 </svg>
                 <span>Равшан Джамшутович</span>
               </a>
-              <button class="logout-button" alt="Выйти">
+              <button class="logout-button authorization-svg-link" alt="Выйти">
                 <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
                   <path
@@ -195,14 +195,18 @@
             <h3 class="product-name">Перфоратор BOSCH BFG 9000</h3>
           </a>
           <div class="product-image-wrapper">
-            <img class="product-image" src="img/perforators/BFG9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+            <img class="product-image" src="img/perforators/BFG9000.jpg" width="184" height="164"
+              alt="Проводной перфоратор с длинным сверлом">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button">купить</button>
-            <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+            <button class="item-hide-button buy-item-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
+            <button class="item-hide-button add-bookmark-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">32500 Р.</del>
-          <button class="button item-price-button" type="button">25500 Р.</button>
+          <button class="button item-price-button" type="button"
+            aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">25500 Р.</button>
         </li>
 
         <li class="catalog-item catalog-products-item new-item">
@@ -210,11 +214,14 @@
             <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
           </a>
           <div class="product-image-wrapper">
-            <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
+            <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+              alt="Компактный перфоратор с аккумулятором">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button">купить</button>
-            <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+            <button class="item-hide-button buy-item-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
+            <button class="item-hide-button add-bookmark-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">22500 Р.</del>
           <button class="button item-price-button" type="button">15500 Р.</button>
@@ -225,11 +232,14 @@
             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
           </a>
           <div class="product-image-wrapper">
-            <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+            <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+              alt="Перфоратор на аккумуляторе">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button">купить</button>
-            <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+            <button class="item-hide-button buy-item-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
+            <button class="item-hide-button add-bookmark-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">30500 Р.</del>
           <button class="button item-price-button" type="button">25500 Р.</button>
@@ -240,11 +250,14 @@
             <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
           </a>
           <div class="product-image-wrapper">
-            <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
+            <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+              alt="Компактный перфоратор с аккумулятором">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button">купить</button>
-            <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+            <button class="item-hide-button buy-item-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
+            <button class="item-hide-button add-bookmark-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">22500 Р.</del>
           <button class="button item-price-button" type="button">12500 Р.</button>
@@ -261,56 +274,64 @@
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img  class="manufacturer-image" src="img/manufacturers/bosch.png" width="220" height="145" alt="Производитель BOSCH">
+              <img class="manufacturer-image" src="img/manufacturers/bosch.png" width="220" height="145"
+                alt="Производитель BOSCH">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link catalog-manufacturers-item-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/makita.png" width="220" height="145" alt="Производитель Makita">
+              <img class="manufacturer-image" src="img/manufacturers/makita.png" width="220" height="145"
+                alt="Производитель Makita">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/dewalt.png" width="220" height="145" alt="Производитель DeWALt">
+              <img class="manufacturer-image" src="img/manufacturers/dewalt.png" width="220" height="145"
+                alt="Производитель DeWALt">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/intersckol.png" width="220" height="145" alt="Производитель ИНТЕРСКОЛ">
+              <img class="manufacturer-image" src="img/manufacturers/intersckol.png" width="220" height="145"
+                alt="Производитель ИНТЕРСКОЛ">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/hitachi.png" width="220" height="145" alt="Производитель HITACHI">
+              <img class="manufacturer-image" src="img/manufacturers/hitachi.png" width="220" height="145"
+                alt="Производитель HITACHI">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/lg.png" width="220" height="145" alt="Производитель LG">
+              <img class="manufacturer-image" src="img/manufacturers/lg.png" width="220" height="145"
+                alt="Производитель LG">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/aeg.png" width="220" height="145" alt="Производитель AEG">
+              <img class="manufacturer-image" src="img/manufacturers/aeg.png" width="220" height="145"
+                alt="Производитель AEG">
             </div>
           </a>
         </li>
         <li class="catalog-item catalog-manufacturers-item">
           <a class="not-underlined-link" href="blank.html">
             <div class="catalog-manufacturers-item-link">
-              <img class="manufacturer-image" src="img/manufacturers/metabo.png" width="220" height="145" alt="Производитель metabo">
+              <img class="manufacturer-image" src="img/manufacturers/metabo.png" width="220" height="145"
+                alt="Производитель metabo">
             </div>
           </a>
         </li>
@@ -352,7 +373,7 @@
                 поднимая его на ваш этаж!
               </p>
               <div class="services-item-delivery-wrapper">
-            </div>
+              </div>
             </li>
             <li class="services-item services-item-warranty">
               <h3 class="section-title service-name">Гарантия</h3>
@@ -406,7 +427,7 @@
         <a class="not-underlined-link map-link" href="blank.html">
           <img alt="Местоположение офиса: Большая Конюшенная ул., 19" height="158" src="img/map.png" width="300">
         </a>
-        <button class="button contacts-button" type="button">Заблудились? Напишите нам!</button>
+        <a class="button contacts-button" href="">Заблудились? Напишите нам!</a>
       </section>
 
     </div>
@@ -427,19 +448,24 @@
           <nav class="footer-site-navigation">
             <ul class="unmarked-list footer-site-navigation-list">
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Компания</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Компания</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Новости</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Новости</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="catalog.html">Каталог</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="catalog.html">Каталог</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Доставка</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Доставка</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Контакты</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -460,18 +486,19 @@
           <nav class="footer-catalog-navigation">
             <ul class="unmarked-list footer-catalog-navigation-list">
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
                   href="blank.html">Материалы</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link" href="blank.html">Техника</a>
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
+                  href="blank.html">Техника</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
                   href="blank.html">Инструмент</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
                   href="blank.html">Спецпредложения</a>
               </li>
             </ul>
@@ -493,7 +520,8 @@
             <li>
               <a class="not-underlined-link social-button" href="#">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
                     d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
                     fill="#212A3A" />
@@ -506,7 +534,8 @@
             <li>
               <a class="not-underlined-link social-button" href="#">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
                     d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
                     fill="#212A3A" />
@@ -517,7 +546,8 @@
             <li>
               <a class="not-underlined-link social-button" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
                     d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
                     fill="#212A3A" />
