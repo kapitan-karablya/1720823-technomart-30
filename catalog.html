@@ -62,7 +62,7 @@
       <div class="personal-account unauthorized-user">
         <div class="authorized-user-wrapper">
           <div class="account-login-links">
-            <a class="not-underlined-link account-link account-link-login" href="blank.html">
+            <a class="not-underlined-link authorization-svg-link account-link account-link-login" href="blank.html">
               <svg class="login-icon" width="21" height="17" viewBox="0 0 21 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
@@ -80,7 +80,7 @@
         <div class="unauthorized-user-wrapper">
           <div class="account-user-links">
             <div class="current-user">
-              <a class="not-underlined-link current-user-link" href="blank.html">
+              <a class="not-underlined-link authorization-svg-link current-user-link" href="blank.html">
                 <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
@@ -88,7 +88,7 @@
                 </svg>
                 <span>Равшан Джамшутович</span>
               </a>
-              <button class="logout-button" alt="Выйти">
+              <button class="logout-button authorization-svg-link" alt="Выйти">
                 <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
                   <path
@@ -142,7 +142,8 @@
       <ul class="unmarked-list breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="not-underlined-link breadcrumbs-link breadcrumbs-link-home" href="index.html">
-            <img class="breadcrumbs-home-image" src="img/catalog-icons/icon-home.svg" width="14" height="12" alt="Главная страница">
+            <img class="breadcrumbs-home-image" src="img/catalog-icons/icon-home.svg" width="14" height="12"
+              alt="Главная страница">
           </a>
         </li>
         <li class="breadcrumbs-item">
@@ -302,33 +303,35 @@
           <h2 class="catalog-section-title sorting-title">Сортировка:</h2>
 
           <ul class="unmarked-list sort-type-list">
-            <li class="sort-price-item">
-              <input class="sort-radio" type="radio" name="sort-type" value="price" id="sort-price" checked>
+            <li class="sort-item sort-price-item">
+              <input class="visually-hidden sort-radio" type="radio" name="sort-type" value="price" id="sort-price"
+                checked>
               <label class="sort-ladel" for="sort-price">По цене</label>
             </li>
-            <li class="sort-type-item">
-              <input class="sort-radio" type="radio" name="sort-type" value="type" id="sort-type">
+            <li class="sort-item sort-type-item">
+              <input class="visually-hidden sort-radio" type="radio" name="sort-type" value="type" id="sort-type">
               <label class="sort-ladel" for="sort-type">По типу</label>
             </li>
-            <li class="sort-functional-item">
-              <input class="sort-radio sort-type" type="radio" name="sort-type" value="functional" id="sort-functional">
+            <li class="sort-item sort-functional-item">
+              <input class="visually-hidden sort-radio sort-type" type="radio" name="sort-type" value="functional"
+                id="sort-functional">
               <label class="sort-ladel" for="sort-functional">По функционалу</label>
             </li>
           </ul>
 
           <ul class="unmarked-list sort-direction-list">
-            <li>
-              <input class="sort-radio sort-direction-radio" type="radio" name="sort-direction" value="increasing"
-                id="sort-increasing" checked>
+            <li class="sort-item">
+              <input class="visually-hidden sort-radio sort-direction-radio" type="radio" name="sort-direction"
+                value="increasing" id="sort-increasing" checked>
               <label class="sort-direction-ladel sort-increasing-label" for="sort-increasing" aria-label="По убыванию">
                 <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L11 10L0 10" fill="#C5C5C5" />
                 </svg>
               </label>
             </li>
-            <li>
-              <input class="sort-radio sort-direction-radio" type="radio" name="sort-direction" value="descending"
-                id="sort-descending">
+            <li class="sort-item">
+              <input class="visually-hidden sort-radio sort-direction-radio" type="radio" name="sort-direction"
+                value="descending" id="sort-descending">
               <label class="sort-direction-ladel sort-descending-label" for="sort-descending" aria-label="По убыванию">
                 <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0h11" fill="#C5C5C5" />
@@ -348,14 +351,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                  alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
-              <button class="button item-price-button" type="button">25500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item">
@@ -363,14 +370,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                  alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
-              <button class="button item-price-button" type="button">25500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -378,14 +389,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                  alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
-              <button class="button item-price-button" type="button">25500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -393,14 +408,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
+                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                  alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">22500 Р.</del>
-              <button class="button item-price-button" type="button">15500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">15500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item">
@@ -408,14 +427,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                <img class="product-image" class="product-image" src="img/perforators/BFG6000.jpg" width="184"
+                  height="164" alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
-              <button class="button item-price-button" type="button">25500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -423,13 +446,17 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
+                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                  alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">в закладки</button>
               </div>
-              <button class="button item-price-button" type="button">12500 Р.</button>
+              <button class="button item-price-button" type="button" 
+              aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">12500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -437,14 +464,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
+                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                  alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">22500 Р.</del>
-              <button class="button item-price-button" type="button">15500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">15500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item">
@@ -452,14 +483,18 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                  alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">в закладки</button>
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
-              <button class="button item-price-button" type="button">22500 Р.</button>
+              <button class="button item-price-button" type="button"
+              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">22500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -467,22 +502,30 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
+                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                  alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
-                <button class="item-hide-button buy-item-button" type="button">купить</button>
-                <button class="item-hide-button add-bookmark-button" type="button">в закладки</button>
+                <button class="item-hide-button buy-item-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">купить</button>
+                <button class="item-hide-button add-bookmark-button" type="button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">в закладки</button>
               </div>
-              <button class="button item-price-button" type="button">12500 Р.</button>
+              <button class="button item-price-button" type="button"
+                aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">12500 Р.</button>
             </li>
           </ul>
         </section>
 
         <ul class="unmarked-list pagination-list">
-          <li><a class="not-underlined-link pagination-item-link pagination-item-current">1</a></li>
-          <li><a class="not-underlined-link pagination-item-link" href="blank.html">2</a></li>
-          <li><a class="not-underlined-link pagination-item-link" href="blank.html">3</a></li>
-          <li><a class="not-underlined-link pagination-item-link pagination-item-next" href="blank.html">Следующая</a>
+          <li><a class="not-underlined-link pagination-item-link pagination-item-current" href=""
+            aria-label="Открыть первую страницу каталога">1</a></li>
+          <li><a class="not-underlined-link pagination-item-link" href="blank.html"
+            aria-label="Открыть вторую страницу каталога">2</a></li>
+          <li><a class="not-underlined-link pagination-item-link" href="blank.html"
+            aria-label="Открыть третью страницу каталога">3</a></li>
+          <li><a class="not-underlined-link pagination-item-link pagination-item-next" href="blank.html"
+            aria-label="Открыть следующую страницу каталога">Следующая</a>
           </li>
         </ul>
       </div>
@@ -519,19 +562,23 @@
           <nav class="footer-site-navigation">
             <ul class="unmarked-list footer-site-navigation-list">
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Компания</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Компания</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Новости</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Новости</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="">Каталог</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link" href="">Каталог</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Доставка</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Доставка</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-site-navigation-link" href="blank.html">Контакты</a>
+                <a class="not-underlined-link footer-navigation-link footer-site-navigation-link"
+                  href="blank.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -552,18 +599,19 @@
           <nav class="footer-catalog-navigation">
             <ul class="unmarked-list footer-catalog-navigation-list">
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
                   href="blank.html">Материалы</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link" href="blank.html">Техника</a>
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
+                  href="blank.html">Техника</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
                   href="blank.html">Инструмент</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="not-underlined-link footer-link footer-catalog-navigation-link"
+                <a class="not-underlined-link footer-link footer-navigation-link footer-catalog-navigation-link"
                   href="blank.html">Спецпредложения</a>
               </li>
             </ul>
@@ -585,7 +633,8 @@
             <li>
               <a class="not-underlined-link social-button" href="#">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
                     d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
                     fill="#212A3A" />
@@ -598,7 +647,8 @@
             <li>
               <a class="not-underlined-link social-button" href="#">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
                     d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
                     fill="#212A3A" />
@@ -609,7 +659,8 @@
             <li>
               <a class="not-underlined-link social-button" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="social-icon-background" fill-rule="evenodd" clip-rule="evenodd"
                     d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z"
                     fill="#212A3A" />
