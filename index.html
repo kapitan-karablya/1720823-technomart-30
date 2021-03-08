@@ -10,7 +10,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
@@ -427,7 +427,7 @@
         <a class="not-underlined-link map-link" href="blank.html">
           <img alt="Местоположение офиса: Большая Конюшенная ул., 19" height="158" src="img/map.png" width="300">
         </a>
-        <a class="button contacts-button" href="">Заблудились? Напишите нам!</a>
+        <a class="button write-us-link" href="">Заблудились? Напишите нам!</a>
       </section>
 
     </div>
@@ -576,20 +576,20 @@
 
   <section class="modal modal-write-us hidden-modal">
     <h2 class="visually-hidden">Написать нам</h2>
-    <form class="write-message-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-input-wrapper">
-        <p class="write-message-item">
-          <label class="form-lable-item" for="write-message-name">Ваше имя:</label>
-          <input class="form-input-item" id="write-message-name" type="text" name="name" placeholder="Имя Фамилия">
+        <p class="write-us-item">
+          <label class="form-lable-item" for="write-us-name">Ваше имя:</label>
+          <input class="form-input-item write-us-input-name" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p class="write-message-item">
-          <label class="form-lable-item" for="write-message-email">Ваш e-mail:</label>
-          <input class="form-input-item" id="write-message-email" type="email" name="email"
+        <p class="write-us-item">
+          <label class="form-lable-item" for="write-us-email">Ваш e-mail:</label>
+          <input class="form-input-item write-us-input-email" id="write-us-email" type="email" name="email"
             placeholder="email@example.com">
         </p>
-        <p class="write-message-item write-message-item-text">
-          <label class="form-lable-item" for="write-message-text">Текст письма:</label>
-          <textarea class="form-input-item form-textarea-item" id="write-message-text" name="text"
+        <p class="write-us-item write-us-item-text">
+          <label class="form-lable-item" for="write-us-text">Текст письма:</label>
+          <textarea class="form-input-item write-us-textarea" id="write-us-text" name="text"
             placeholder="В свободной форме"></textarea>
         </p>
       </div>
@@ -608,6 +608,8 @@
       title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+
+  <script src="js/write-us.js"></script>
 
 </body>
 
