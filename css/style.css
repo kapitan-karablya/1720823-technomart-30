@@ -763,15 +763,23 @@
   grid-area: 2/1/4/3;
   margin: 0;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .slider-list {
-  grid-area: 1/1/2/-1;
+  grid-area: 1/1/-1/-1;
+  display: flex;
+  transition: transform 0.6s ease;
+  z-index: -1;
+  
 }
 
 .slide {
   background-color: rgba(var(--basic-black-rgb), 0.25);
   padding: 24px 0 16px 23px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .slide-title {
@@ -801,14 +809,6 @@
   grid-area: 3/1/4/2;
   width: 192px;
   margin: 39px auto 27px 24px;
-}
-
-.slide {
-  display: none;
-}
-
-.slide-current {
-  display: block;
 }
 
 .slider-controls {
