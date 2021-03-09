@@ -199,13 +199,13 @@
               alt="Проводной перфоратор с длинным сверлом">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button"
+            <button class="item-hide-button buy-item buy-item-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
             <button class="item-hide-button add-bookmark-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">32500 Р.</del>
-          <button class="button item-price-button" type="button"
+          <button class="button buy-item item-price-button" type="button"
             aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">25500 Р.</button>
         </li>
 
@@ -218,13 +218,14 @@
               alt="Компактный перфоратор с аккумулятором">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button"
+            <button class="item-hide-button buy-item buy-item-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
             <button class="item-hide-button add-bookmark-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">22500 Р.</del>
-          <button class="button item-price-button" type="button">15500 Р.</button>
+          <button class="button buy-item item-price-button" type="button" 
+              aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">15500 Р.</button>
         </li>
 
         <li class="catalog-item catalog-products-item">
@@ -236,13 +237,14 @@
               alt="Перфоратор на аккумуляторе">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button"
+            <button class="item-hide-button buy-item buy-item-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
             <button class="item-hide-button add-bookmark-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">30500 Р.</del>
-          <button class="button item-price-button" type="button">25500 Р.</button>
+          <button class="button buy-item item-price-button" type="button" 
+              aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">25500 Р.</button>
         </li>
 
         <li class="catalog-item catalog-products-item new-item">
@@ -254,13 +256,14 @@
               alt="Компактный перфоратор с аккумулятором">
           </div>
           <div class="item-hiden-buttons">
-            <button class="item-hide-button buy-item-button" type="button"
+            <button class="item-hide-button buy-item buy-item-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в корзину">купить</button>
             <button class="item-hide-button add-bookmark-button" type="button"
               aria-label="Добавить Перфоратор BOSCH BFG 9000 в закладки">в закладки</button>
           </div>
           <del class="item-price item-old-price">22500 Р.</del>
-          <button class="button item-price-button" type="button">12500 Р.</button>
+          <button class="button buy-item item-price-button" type="button" 
+              aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">12500 Р.</button>
         </li>
       </ul>
     </section>
@@ -609,7 +612,21 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <section class="modal modal-add-to-cart hidden-modal">
+    <h2 class="visually-hidden">Добавление в корзину</h2>
+    <p class="successful-addition">
+      Товар добавлен в корзину!
+    </p>
+    <div class="modal-add-to-cart-submit-field">
+      <a class="button modal-place-order-button" href="blank.html">Оформить заказ</a>
+      <button class="button continue-button" type="button">Продолжить покупки</button>
+    </div>
+    <button class="modal-close modal-add-to-cart-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
   <script src="js/write-us.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/cart.js"></script>
 
 </body>
 

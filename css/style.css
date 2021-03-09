@@ -2115,7 +2115,7 @@
   color: var(--basic-black);
 }
 
-.continue-button:hover, .continue-button:active {
+.continue-button:hover, .continue-button:focus {
   background-color: var(--basic-white);
 }
 
