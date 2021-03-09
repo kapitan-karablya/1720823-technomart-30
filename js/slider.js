@@ -38,7 +38,7 @@ let position = {
     getMax: function () {
         return items[position.getItemMax()].position;
     }
-}
+};
 
 let transformItem = function (direction) {
     let nextItem;
@@ -63,7 +63,7 @@ let transformItem = function (direction) {
         transform += 100;
     }
     sliderList.style.transform = 'translateX(' + transform + '%)';
-}
+};
 
 sliderControls.forEach(function (item) {
     item.addEventListener('click', function (evt) {
@@ -73,5 +73,5 @@ sliderControls.forEach(function (item) {
             transformItem(direction);
         }
     })
-})
+});
 

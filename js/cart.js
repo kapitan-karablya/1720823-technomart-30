@@ -6,7 +6,7 @@ const cartClose = cartPopup.querySelector(".modal-close");
 cartButtons.forEach((cartButton) => cartButton.addEventListener(`click`, (evt) => {
     evt.preventDefault();
     cartPopup.classList.add("modal-show");
-}))
+}));
 
 
 cartClose.addEventListener("click", function (evt) {
