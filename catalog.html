@@ -34,7 +34,8 @@
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 fill="white" />
             </svg>
-            <input class="search-input" type="search" placeholder="Поиск:">
+            <label class="search-label" for="search-input" aria-label="Поиск по сайту"></label>
+            <input class="search-input" id="search-input" type="search" placeholder="Поиск:">
           </form>
           <a class="not-underlined-link main-navigation-link bookmarks" href="blank.html">
             Закладки: 0
@@ -170,8 +171,10 @@
               <div class="range-toggle toggle-max"></div>
             </div>
             <div class="price-controls">
+              <label class="price-input-label" for="priceMin" aria-label="Минимальная стоимость"></label>
               <input class="catalog-settings price-input form-control" id="priceMin" type="text" value="0">
               <label class="price-dash">&#8212;</label>
+              <label class="price-input-label" for="priceMax" aria-label="Максимальная стоимость"></label>
               <input class="catalog-settings price-input form-control" id="priceMax" type="text" value="30000">
             </div>
           </fieldset>
@@ -348,7 +351,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg6000.jpg" width="184" height="164"
                   alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
@@ -367,7 +370,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg6000.jpg" width="184" height="164"
                   alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
@@ -386,7 +389,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg6000.jpg" width="184" height="164"
                   alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
@@ -405,7 +408,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg2000_3000.jpg" width="184" height="164"
                   alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
@@ -424,7 +427,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg6000.jpg" width="184" height="164"
                   alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
@@ -443,7 +446,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg2000_3000.jpg" width="184" height="164"
                   alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
@@ -461,7 +464,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg2000_3000.jpg" width="184" height="164"
                   alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
@@ -480,7 +483,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg6000.jpg" width="184" height="164"
                   alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
@@ -499,7 +502,7 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" src="img/perforators/BFG2000_3000.jpg" width="184" height="164"
+                <img class="product-image" src="img/perforators/bfg2000_3000.jpg" width="184" height="164"
                   alt="Компактный перфоратор с аккумулятором">
               </div>
               <div class="item-hiden-buttons">
