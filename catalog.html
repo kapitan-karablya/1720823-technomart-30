@@ -45,7 +45,6 @@
           <a class="not-underlined-link main-navigation-link place-order" href="blank.html">Оформить заказ</a>
         </div>
       </div>
-      </div>
     </nav>
     <div class="secondary-header">
       <p class="store-description">
@@ -88,7 +87,7 @@
                 </svg>
                 <span>Равшан Джамшутович</span>
               </a>
-              <button class="logout-button authorization-svg-link" alt="Выйти">
+              <button class="logout-button authorization-svg-link" aria-label="Выйти">
                 <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
                   <path
@@ -171,11 +170,12 @@
               <div class="range-toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <input class="catalog-settings price-input" id="priceMin" type="text" value="0" class="form-control">
+              <input class="catalog-settings price-input form-control" id="priceMin" type="text" value="0">
               <label class="price-dash">&#8212;</label>
-              <input class="catalog-settings price-input" id="priceMax" type="text" value="30000" class="form-control">
+              <input class="catalog-settings price-input form-control" id="priceMax" type="text" value="30000">
             </div>
           </fieldset>
+
           <fieldset class="filter-fieldset manufacturers-fieldset">
             <legend class="filter-option-title manufacturers-title">Производители:</legend>
             <ul class="unmarked-list filter-option-list manufacturers-list">
@@ -198,9 +198,8 @@
                   </svg>
                 </label>
               </li>
-              <li class="filter-item filter-checkbox-item"">
-                <input class=" checkbox-input visually-hidden" type="checkbox" name="intersckol"
-                id="filter-intersckol">
+              <li class="filter-item filter-checkbox-item">
+                <input class="checkbox-input visually-hidden" type="checkbox" name="intersckol" id="filter-intersckol">
                 <label class="filter-item-label checkbox-label" for="filter-intersckol">ИНТЕРСКОЛ
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -218,9 +217,8 @@
                   </svg>
                 </label>
               </li>
-              <li class="filter-item filter-checkbox-item"">
-                <input class=" checkbox-input visually-hidden" type="checkbox" name="makita" id="filter-makita"
-                checked>
+              <li class="filter-item filter-checkbox-item">
+                <input class=" checkbox-input visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
                 <label class="filter-item-label checkbox-label" for="filter-makita">MAKITA
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +236,7 @@
                   </svg>
                 </label>
               </li>
-              <li class="filter-item filter-checkbox-item"">
+              <li class="filter-item filter-checkbox-item">
                 <input class=" checkbox-input visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label class="filter-item-label checkbox-label" for="filter-dewalt">DEWALT
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
@@ -257,7 +255,7 @@
                   </svg>
                 </label>
               </li>
-              <li class="filter-item filter-checkbox-item"">
+              <li class="filter-item filter-checkbox-item">
                 <input class=" checkbox-input visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label class="filter-item-label checkbox-label" for="filter-hitachi">HITACHI
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
@@ -277,8 +275,8 @@
                 </label>
               </li>
             </ul>
-
           </fieldset>
+
           <fieldset class="filter-fieldset power-fieldset">
             <legend class="filter-option-title power-title">Питание:</legend>
             <ul class="unmarked-list filter-option-list">
@@ -339,7 +337,6 @@
               </label>
             </li>
           </ul>
-          </form>
         </section>
 
         <section class="catalog-items">
@@ -362,7 +359,7 @@
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item">
@@ -381,7 +378,7 @@
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -400,7 +397,7 @@
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -419,7 +416,7 @@
               </div>
               <del class="item-price item-old-price">22500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">15500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">15500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item">
@@ -427,8 +424,8 @@
                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="product-image-wrapper">
-                <img class="product-image" class="product-image" src="img/perforators/BFG6000.jpg" width="184"
-                  height="164" alt="Перфоратор на аккумуляторе">
+                <img class="product-image" src="img/perforators/BFG6000.jpg" width="184" height="164"
+                  alt="Перфоратор на аккумуляторе">
               </div>
               <div class="item-hiden-buttons">
                 <button class="item-hide-button buy-item buy-item-button" type="button"
@@ -438,7 +435,7 @@
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">25500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -455,8 +452,8 @@
                 <button class="item-hide-button add-bookmark-button" type="button"
                   aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">в закладки</button>
               </div>
-              <button class="button buy-item item-price-button" type="button" 
-              aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">12500 Р.</button>
+              <button class="button buy-item item-price-button" type="button"
+                aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину">12500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -475,7 +472,7 @@
               </div>
               <del class="item-price item-old-price">22500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">15500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину">15500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item">
@@ -494,7 +491,7 @@
               </div>
               <del class="item-price item-old-price">30500 Р.</del>
               <button class="button buy-item item-price-button" type="button"
-              aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">22500 Р.</button>
+                aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину">22500 Р.</button>
             </li>
 
             <li class="catalog-item catalog-products-item new-item">
@@ -519,13 +516,13 @@
 
         <ul class="unmarked-list pagination-list">
           <li><a class="not-underlined-link pagination-item-link pagination-item-current" href=""
-            aria-label="Открыть первую страницу каталога">1</a></li>
+              aria-label="Открыть первую страницу каталога">1</a></li>
           <li><a class="not-underlined-link pagination-item-link" href="blank.html"
-            aria-label="Открыть вторую страницу каталога">2</a></li>
+              aria-label="Открыть вторую страницу каталога">2</a></li>
           <li><a class="not-underlined-link pagination-item-link" href="blank.html"
-            aria-label="Открыть третью страницу каталога">3</a></li>
+              aria-label="Открыть третью страницу каталога">3</a></li>
           <li><a class="not-underlined-link pagination-item-link pagination-item-next" href="blank.html"
-            aria-label="Открыть следующую страницу каталога">Следующая</a>
+              aria-label="Открыть следующую страницу каталога">Следующая</a>
           </li>
         </ul>
       </div>
@@ -698,7 +695,7 @@
     </div>
     <button class="modal-close modal-add-to-cart-close" type="button" aria-label="Закрыть"></button>
   </section>
-  
+
   <script src="js/cart.min.js"></script>
 
 </body>

@@ -34,13 +34,13 @@
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 fill="white" />
             </svg>
-            <input class="search-input" type="search" placeholder="Поиск:">
+            <label class="search-label" for="search-input" aria-label="Поиск по сайту"></label>
+            <input class="search-input" id="search-input" type="search" placeholder="Поиск:">
           </form>
           <a class="not-underlined-link main-navigation-link bookmarks" href="blank.html">Закладки: 0</a>
           <a class="not-underlined-link main-navigation-link shopping-cart" href="blank.html">Корзина: 0</a>
           <a class="not-underlined-link main-navigation-link place-order" href="blank.html">Оформить заказ</a>
         </div>
-      </div>
       </div>
     </nav>
     <div class="secondary-header">
@@ -85,7 +85,7 @@
                 </svg>
                 <span>Равшан Джамшутович</span>
               </a>
-              <button class="logout-button authorization-svg-link" alt="Выйти">
+              <button class="logout-button authorization-svg-link" aria-label="Выйти">
                 <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
                   <path
@@ -147,7 +147,7 @@
           <h3 class="promo-item-title">Техника</h3>
           <a class="not-underlined-link promo-item-link" href="blank.html">для стройки</a>
         </li>
-        <figure class="slider">
+        <li class="slider">
           <ul class="unmarked-list slider-list">
             <li class="slide  perforator-slide">
               <h3 class="slide-title">Дрели</h3>
@@ -158,10 +158,8 @@
               <p class="slide-text">Настоящие мужские игрушки</p>
             </li>
           </ul>
-          <input class="slider-button slider-button-left" type="image" src="img/slider/icon-left.svg" width="23"
-            height="41" alt="Предыдущий слайд">
-          <input class="slider-button slider-button-right" type="image" src="img/slider/icon-left.svg" width="23"
-            height="41" alt="Следующий слайд">
+          <button class="slider-button slider-button-left" type="button" aria-label="Предыдущий слайд"></button>
+          <button class="slider-button slider-button-right" type="button" aria-label="Следующий слайд"></button>
           <div class="slider-controls">
             <button class="slider-control" type="button" aria-label="Первый слайд"></button>
             <button class="slider-control current-slider-control" type="button" aria-label="Второй слайд"></button>
@@ -169,7 +167,7 @@
           <div class="open-catalog-button">
             <a class="button" href="catalog.html">Открыть каталог</a>
           </div>
-        </figure>
+        </li>
         <li class="promo-item promo-item-discounts">
           <h3 class="promo-item-title">Скидки 50%</h3>
           <a class="not-underlined-link promo-item-link" href="blank.html">на 350 товаров</a>
@@ -425,10 +423,10 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <a class="not-underlined-link map-link" href="blank.html">
-          <img alt="Местоположение офиса: Большая Конюшенная ул., 19" height="158" src="img/map.png" width="300">
+        <a class="not-underlined-link map-link" href="map.html">
+          <img alt="Местоположение офиса: Большая Конюшенная ул., 19" width="300" height="158" src="img/map.png">
         </a>
-        <a class="button write-us-link" href="">Заблудились? Напишите нам!</a>
+        <a class="button write-us-link" href="writeus.html">Заблудились? Напишите нам!</a>
       </section>
 
     </div>
