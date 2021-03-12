@@ -167,8 +167,8 @@
               <div class="range-scale">
                 <div class="range-bar"></div>
               </div>
-              <div class="range-toggle toggle-min"></div>
-              <div class="range-toggle toggle-max"></div>
+              <div class="range-toggle toggle-min" aria-label="Нижняя граница цены"></div>
+              <div class="range-toggle toggle-max" aria-label="Верхняя граница цены"></div>
             </div>
             <div class="price-controls">
               <label class="price-input-label" for="priceMin" aria-label="Минимальная стоимость"></label>
@@ -183,7 +183,7 @@
             <legend class="filter-option-title manufacturers-title">Производители:</legend>
             <ul class="unmarked-list filter-option-list manufacturers-list">
               <li class="filter-item filter-checkbox-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
+                <input class="filter-input checkbox-input visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
                 <label class="filter-item-label checkbox-label" for="filter-bosch">BOSCH
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +202,7 @@
                 </label>
               </li>
               <li class="filter-item filter-checkbox-item">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="intersckol" id="filter-intersckol">
+                <input class="filter-input checkbox-input visually-hidden" type="checkbox" name="intersckol" id="filter-intersckol" disabled>
                 <label class="filter-item-label checkbox-label" for="filter-intersckol">ИНТЕРСКОЛ
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +221,7 @@
                 </label>
               </li>
               <li class="filter-item filter-checkbox-item">
-                <input class=" checkbox-input visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
+                <input class="filter-input checkbox-input visually-hidden" type="checkbox" name="makita" id="filter-makita" checked disabled>
                 <label class="filter-item-label checkbox-label" for="filter-makita">MAKITA
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +240,7 @@
                 </label>
               </li>
               <li class="filter-item filter-checkbox-item">
-                <input class=" checkbox-input visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
+                <input class=" filter-input checkbox-input visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label class="filter-item-label checkbox-label" for="filter-dewalt">DEWALT
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +259,7 @@
                 </label>
               </li>
               <li class="filter-item filter-checkbox-item">
-                <input class=" checkbox-input visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
+                <input class="filter-input checkbox-input visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label class="filter-item-label checkbox-label" for="filter-hitachi">HITACHI
                   <svg class="checkbox-icon checkbox-off" width="23" height="23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -284,12 +284,12 @@
             <legend class="filter-option-title power-title">Питание:</legend>
             <ul class="unmarked-list filter-option-list">
               <li class="filter-item filter-radio-item">
-                <input class="visually-hidden radio-input" type="radio" name="power-type" value="accumulator"
-                  id="filter-accumulator" checked>
+                <input class="filter-input visually-hidden radio-input" type="radio" name="power-type" value="accumulator"
+                  id="filter-accumulator" checked disabled>
                 <label class="filter-item-label radio-label" for="filter-accumulator">Аккумуляторные</label>
               </li>
               <li class="filter-item filter-radio-item">
-                <input class="visually-hidden radio-input" type="radio" name="power-type" value="wired"
+                <input class="filter-input visually-hidden radio-input" type="radio" name="power-type" value="wired"
                   id="filter-wired">
                 <label class="filter-item-label radio-label" for="filter-wired">Сетевые</label>
               </li>
